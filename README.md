@@ -81,3 +81,8 @@ All tables form a **relational Power BI data model** enabling comprehensive busi
 This study highlights that **strategic, analytics-driven investments** maximize ROI and financial efficiency. Franchises combining **consistent performance, impactful player allocation, and targeted sponsorship investment** achieved the highest returns.  
 
 Leveraging **Excel and Power BI**, this project demonstrates how **business analytics can guide investment strategy, optimize resources, and evaluate performance**, making it highly relevant for careers in **data analytics, business intelligence, and strategic investment planning**.
+
+## **Author**
+**Lakshma**  
+MBA | Aspiring Data Analyst  
+**Skills:** SQL | Power BI | Data Analysis  
