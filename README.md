@@ -1,148 +1,83 @@
-# IPL 2025: Team Performance and Sponsorship Investment Impact Analysis Using Power BI
+# IPL 2025: Team Performance & Sponsorship Investment Impact Analysis
 
-## Project Overview
-The Indian Premier League (IPL) is not only a premier cricket tournament but also a high-value business ecosystem driven by sponsorships, brand investments, and fan engagement. Franchises invest significant financial resources with the expectation that higher sponsorship spending will lead to better on-field performance, stronger brand value, and improved return on investment (ROI).
+## Introduction
 
-This project analyzes IPL 2025 data to evaluate whether higher sponsorship investment actually guarantees better team performance. Using Power BI, multiple datasets related to team performance, player statistics, sponsorship investment, brand value, and popularity metrics are integrated into an interactive analytical solution to support data-driven decision-making in sports business analytics.
+The **Indian Premier League (IPL)** is not only a premier sports league but also a **multi-billion-rupee business ecosystem**, generating massive investments through sponsorships, franchise valuations, and brand partnerships.  
 
----
+This project addresses a key **business problem**: **Does financial investment in teams deliver measurable returns?** By analyzing team performance, player contributions, and sponsorship investments, this study evaluates **investment efficiency, ROI, and strategic decision-making** for franchises and sponsors.
 
-## Business Problem Statement
-IPL teams and sponsors commit substantial financial investments with expectations of improved performance, higher rankings, and increased brand visibility. However, despite high spending, several teams fail to perform consistently across seasons.
+## Objective of the Study
 
-This project addresses the following key business questions:
-- Does higher sponsorship investment lead to better team performance?
-- Are financially strong teams more consistent across matches?
-- How much do player performance and team consistency influence outcomes compared to sponsorship spending?
-- Are sponsorship investments efficiently converted into wins, rankings, and brand growth?
-
----
-
-## Objectives of the Study
-- Perform Exploratory Data Analysis (EDA) to understand overall IPL 2025 trends  
-- Analyze team performance metrics such as wins, losses, win percentage, rankings, and playoff status  
-- Evaluate player performance and its contribution to team success  
-- Assess team consistency across matches using performance trends and Net Run Rate (NRR)  
-- Examine sponsorship investment, sponsor categories, and brand value across teams  
-- Analyze ROI by comparing sponsorship investment against performance outcomes  
-- Design an efficient Power BI data model for integrated analysis  
-- Present insights through interactive dashboards and visual storytelling  
-
----
+* Evaluate **team performance, player contribution, and sponsorship investment efficiency**  
+* Quantify **Return on Investment (ROI)** across 10 IPL teams  
+* Identify actionable insights for **strategic investment and resource allocation**  
+* Build **interactive dashboards** to support **data-driven business decisions**  
 
 ## Dataset Description
-The analysis is based on a multi-table IPL 2025 dataset designed to support both performance and financial analysis.
 
-### Key Tables Used
-- **DIM_TEAM**: Central dimension table containing team names, used to connect all fact tables  
-- **Matches**: Match-level details including date, venue, teams involved, and match winner  
-- **Performance**: Team-level metrics such as total matches, wins, losses, win percentage, playoff status, and Net Run Rate (NRR)  
-- **Player_Performance**: Player statistics including runs, wickets, strike rate, economy rate, and key achievements  
-- **Team_Sponsorship**: Sponsorship details such as sponsor name, category, duration, and investment amount  
-- **Title_Sponsorship**: High-value title sponsorship information including industry category, contract duration, and value  
-- **Brand_Value**: Team brand valuation data (USD millions) and brand rankings  
-- **Team_Popularity**: Popularity indicators such as social media followers, Brand Strength Index (BSI), and fair play points  
-- **IPL_Popularity**: League-level metrics including digital viewership, TV ratings, stadium attendance, and social media growth  
+**Total Datasets:** 8 relational tables, all linked via **Team Name** and **Year**:
 
-All tables are linked using team name and year, forming a relational Power BI data model.
+* **DIM_TEAM** – Central dimension table containing team names, connecting all fact tables  
+* **Matches** – Match-level data including date, venue, teams, and winner  
+* **Performance** – Team-level metrics: total matches, wins/losses, win percentage, playoff status, Net Run Rate (NRR)  
+* **Player_Performance** – Player stats: runs scored, wickets, strike rate, economy, key achievements, and team association  
+* **Team_Sponsorship** – Sponsorship details: sponsor name, category/type, duration, yearly amount  
+* **Title_Sponsorship** – High-value title sponsorship: industry, value, contract duration, year  
+* **Brand_Value** – Team brand valuation in USD millions and brand ranking  
+* **Team_Popularity** – Popularity metrics: Instagram followers, Brand Strength Index (BSI), Fair Play points  
+* **IPL_Popularity** – League-level metrics: digital viewership, TV ratings (TRP), stadium attendance, social media growth  
 
----
+All tables form a **relational Power BI data model** enabling comprehensive business and ROI analysis.
 
 ## Tools & Technologies Used
-- **Power BI Desktop** – Data modeling, dashboard creation, and visual analytics  
-- **Power Query Editor** – Data cleaning, transformation, and preparation  
-- **DAX (Data Analysis Expressions)** – Creation of KPIs and calculated measures  
-- **Microsoft Excel** – Initial data validation and formatting  
-- **GitHub** – Version control and project documentation  
 
----
+* **Microsoft Excel** – data cleaning, standardization, preliminary analysis, dataset merging, querying, and preparation  
+* **Power BI** – interactive dashboards and business visualization  
 
 ## Data Cleaning & Preparation
-- Standardized team names across all datasets  
-- Removed duplicate and irrelevant records  
-- Handled missing values in sponsorship and performance data  
-- Validated and corrected data types for numerical and categorical fields  
-- Created one-to-many relationships using `DIM_TEAM` as the central table  
-- Developed calculated measures for:
-  - Win percentage  
-  - Total sponsorship investment per team  
-  - Brand value comparisons  
-  - Performance vs investment indicators  
 
----
+* Standardized all 8 datasets to a consistent format  
+* Merged match, team, player, and sponsorship data into a relational model  
+* Handled missing values, duplicates, and inconsistent records  
+* Created key metrics for **team performance, player contribution, sponsorship ROI, and brand value**  
 
-## Data Modeling Approach
-- Implemented a star-schema–like model with `DIM_TEAM` at the center  
-- Connected fact tables related to performance, sponsorship, player statistics, and popularity  
-- Enabled cross-filtering for seamless interaction across dashboards  
-- Optimized relationships to avoid ambiguity and incorrect aggregations  
+## Analysis Performed
 
-This approach ensures accuracy, scalability, and strong performance within Power BI.
+1. **Exploratory Data Analysis (EDA)** – dataset trends, distributions, and correlations  
+2. **Team Performance Analysis** – wins, rankings, efficiency, and playoff metrics of total 74 matches  
+3. **Player Performance Analysis** – individual impact on team outcomes and ROI 
+4. **Team Consistency Analysis** – stability and risk assessment for investment optimization  
+5. **Sponsorship & Investment Analysis** – spend patterns, brand value, and investment efficiency  
+6. **Return on Investment (ROI) Analysis** – conversion of investment into measurable performance and brand value  
 
----
+## Dashboard Design (Power BI)
 
-## Dashboard Design in Power BI
-The analysis is presented through multiple interactive dashboards:
+**6 dashboards**, aligned to analysis topics:  
 
-### Exploratory Data Analysis (EDA)
-- Overall match distribution  
-- Team participation overview  
-- Sponsorship distribution across teams  
-- Initial trends in performance and popularity  
-
-### Team Performance Analysis
-- Wins, losses, and win percentage by team  
-- Team rankings and playoff qualification  
-- Comparison of top-performing and low-performing teams  
-
-### Player Performance Analysis
-- Top run scorers and wicket takers  
-- Player contribution to team success  
-- Identification of key match-winning players  
-
-### Team Consistency Analysis
-- Match-by-match performance trends  
-- Identification of consistent and inconsistent teams  
-- Relationship between consistency and final rankings  
-
-### Sponsorship & Investment Analysis
-- Sponsorship investment by team  
-- Sponsor category and duration analysis  
-- Brand value comparison across teams  
-
-### ROI Analysis
-- Comparison of sponsorship investment versus team performance  
-- Identification of high ROI and low ROI teams  
-- Evaluation of sponsorship efficiency and utilization  
-
----
+1. **Exploratory Data Overview**  
+2. **Team Performance Metrics**  
+3. **Player Impact Analysis**  
+4. **Team Consistency Trends**  
+5. **Sponsorship & Investment Evaluation**  
+6. **Return on Investment (ROI) Insights**  
 
 ## Key Insights & Findings
-- Higher sponsorship investment does not guarantee higher win percentage  
-- Some teams achieved strong performance with moderate sponsorship spending  
-- Team consistency had a greater impact on success than financial investment alone  
-- Individual player performance significantly influenced match outcomes  
-- Certain high-investment teams delivered low ROI, indicating inefficiencies  
-- Brand popularity and social media presence did not always translate into on-field success  
 
----
+* **High spending alone does not guarantee higher returns**; investment efficiency is critical  
+* Teams with **consistent performance and resource allocation** achieved **higher ROI**  
+* **Player impact** is a major driver of ROI, more than sponsorship exposure alone  
+* Data-driven investment monitoring enables **optimization of sponsorship and operational resources**  
 
 ## Recommendations
-- IPL teams should adopt balanced investment strategies combining financial strength with talent development  
-- Sponsors should evaluate ROI and performance efficiency rather than focusing only on brand exposure  
-- Teams should prioritize consistency and player analytics for sustainable success  
-- Data-driven performance monitoring should be embedded into strategic planning  
 
----
+* **Focus on investment efficiency:** Allocate resources strategically rather than increasing spend  
+* **Leverage player analytics:** Direct investment toward high-impact players for higher ROI  
+* **Prioritize consistency:** Stable performance correlates with better financial returns  
+* **Adopt ROI-based sponsorship strategies:** Evaluate investments based on measurable returns  
+* **Implement continuous analytics monitoring:** Real-time insights identify underperforming areas early  
 
 ## Conclusion
-This project demonstrates that while sponsorship investment plays an important role in IPL 2025, financial strength alone does not ensure success. Teams that combined consistent performance, impactful players, and efficient investment utilization achieved better outcomes.
 
-The project highlights the practical application of Power BI and data analytics in sports business decision-making and showcases strong skills in data modeling, dashboard development, and insight generation.
+This study highlights that **strategic, analytics-driven investments** maximize ROI and financial efficiency. Franchises combining **consistent performance, impactful player allocation, and targeted sponsorship investment** achieved the highest returns.  
 
----
-
-## Author
-**Lakshma Murugesh**  
-Aspiring Data Analyst  
-Skills: Power BI | SQL | Excel | Data Analytics
+Leveraging **Excel and Power BI**, this project demonstrates how **business analytics can guide investment strategy, optimize resources, and evaluate performance**, making it highly relevant for careers in **data analytics, business intelligence, and strategic investment planning**.
