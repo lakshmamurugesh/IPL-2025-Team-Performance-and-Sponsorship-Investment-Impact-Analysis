@@ -54,12 +54,12 @@ All tables form a **relational Power BI data model** enabling comprehensive busi
 
 **6 dashboards**, aligned to analysis topics:  
 
-1. **Exploratory Data Overview**  
-2. **Team Performance Metrics**  
-3. **Player Impact Analysis**  
-4. **Team Consistency Trends**  
-5. **Sponsorship & Investment Evaluation**  
-6. **Return on Investment (ROI) Insights**  
+1. **Exploratory Data Analysis**  
+2. **Team Performance**  
+3. **Player performance**  
+4. **Team Consistency**  
+5. **Sponsorship & Investment**  
+6. **Return on Investment (ROI)**  
 
 ## Key Insights & Findings
 
